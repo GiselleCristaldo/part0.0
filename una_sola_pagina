@@ -1,0 +1,26 @@
+title Accediendo a una sola página
+
+note over browser:
+El browser envía una solicitud
+HTTP GET a la dirección del servidor newnote_spa 
+esta solicitud tiene en la cabecera Content-Type 
+que le dice al servidor que los datos incluidos 
+están representados en formato JSON.
+end note
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa 
+browser->server:https://studies.cs.helsinki.fi/exampleapp/main.css
+browser->server:https://studies.cs.helsinki.fi/exampleapp/spa.js
+browser->server:https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: HTML-code
+
+note over server:
+El servidor responde 
+con el código de estado HTTP 200 
+Esta vez, el servidor no solicita una redirección, 
+el navegador permanece en la misma página.
+end note
+
+
+
+
+
