@@ -1,0 +1,22 @@
+title new_note_spa
+note over browser:
+El browser envía una solicitud
+HTTP POST a la dirección del servidor newnote_spa 
+esta solicitud tiene en la cabecera Content-Type 
+que le dice al servidor que los datos incluidos 
+están representados en formato JSON.
+end note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over server:
+El servidor responde 
+con el código de estado HTTP 201 Created 
+Esta vez, el servidor no solicita una redirección, 
+el navegador permanece en la misma página
+y no envía más solicitudes HTTP.
+end note
+server-->browser: Status Code 201 created
+
+
+
+
